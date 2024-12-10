@@ -4,61 +4,57 @@ body{
     width: 100%;
     height: 100%;
 }
-header{ 
-height: 50px;
-border:10px solid grey;
+
+ img{
+    height: auto;
+    width: auto;
+}
+.header{ 
+height: 5%;
+width: auto;
 background-color: blue;
-flex-direction: row;
-flex-wrap: wrap;
 text-align: center;
 }
 .container{
     display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
+    height: 95%;
+    width: auto;
     flex-wrap: wrap;
-}
-nav{
-    height: 60px;
-    width: 900px;
-    border:10px solid grey;
-    background-color: yellow;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-   
-}
-article{
-    height: 90%;
-    width: 900px;
-    border:10px solid grey;
-    background-color: rgb(95, 150, 8);
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
 }
 .divayuda{
-    height: 100%;
-    width: 35%;
-    border:10px solid grey;
+ flex: 1 1 calc(33,33% - 10px);
     background-color: rgb(150, 65, 8);
-    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    background-image: url("https://loremflickr.com/320/240");
+    background-size: cover;
 }
-aside{
-    height: 100%;
-    width: 25%;
-    border:10px solid grey;
+.aside{
+    flex: 1;
     background-color: rgb(150, 65, 8);
-    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    background-image: url("https://loremflickr.com/320/240");
+    background-size: cover;
 }
-.divPrincipal{
-  display: block;  
-  height: 100%;
-  flex-direction: row;
+.divPrincipal{ 
+    flex: 1;
+  background-color: rgb(95, 150, 8);
   flex-wrap: wrap;
+  background-image: url("https://loremflickr.com/320/240");
+  background-size: cover;
+}
+.footer{
+    height: 5%;
+    width: auto;
+    background-color: blue;
+    text-align: center;
+}
+
+@media(min-width: 640px){
+.container{
+    flex-direction: row;
+}
+
+
 }
