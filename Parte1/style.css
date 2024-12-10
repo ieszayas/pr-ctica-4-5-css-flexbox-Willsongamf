@@ -5,56 +5,65 @@ body{
     height: 100%;
 }
 
- img{
+.container div img{
+    object-fit: cover;
     height: auto;
     width: auto;
 }
 .header{ 
-height: 5%;
+    display: flex;
+height: auto;
 width: auto;
-background-color: blue;
-text-align: center;
+background-color: rgb(1, 1, 5);
+justify-content:  center;
+align-items: center;
+border: 7px solid rgb(46, 45, 45);
 }
 .container{
     display: flex;
-    height: 95%;
+    height: auto;
     width: auto;
     flex-wrap: wrap;
 }
-.divayuda{
- flex: 1 1 calc(33,33% - 10px);
-    background-color: rgb(150, 65, 8);
-    flex-wrap: wrap;
-    text-align: center;
-    background-image: url("https://loremflickr.com/320/240");
-    background-size: cover;
+h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serifç;
+    background: linear-gradient(to right, rgb(19, 90, 36), rgb(11, 121, 17), rgb(1, 153, 9), rgb(0, 255, 55));
+    background-clip: text;
+    --webkit-background-clip:text;
+    color: transparent;
 }
-.aside{
-    flex: 1;
-    background-color: rgb(150, 65, 8);
-    flex-wrap: wrap;
-    text-align: center;
-    background-image: url("https://loremflickr.com/320/240");
-    background-size: cover;
-}
-.divPrincipal{ 
-    flex: 1;
-  background-color: rgb(95, 150, 8);
+.container div{ 
+    flex: 1 1 calc(33,33%);
   flex-wrap: wrap;
-  background-image: url("https://loremflickr.com/320/240");
-  background-size: cover;
-}
-.footer{
-    height: 5%;
-    width: auto;
-    background-color: blue;
-    text-align: center;
+  margin-left: 10%;
+  margin-top: 8.5%;
+  width: auto;
+  border: 5px solid black;
+  box-shadow: 60px -16px rgb(0, 0, 0);
 }
 
-@media(min-width: 640px){
+.divabajo{
+ flex: 1 1 calc(33,33%);
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-top: 9%;
+  margin-bottom: 2%;
+  width: auto;
+  border: 5px solid black;
+}
+@media(max-width: 640px){
 .container{
-    flex-direction: row;
+    display: block;
+    flex-wrap: wrap;
 }
-
-
+.container div{
+   margin-top: 30%;
+   margin-left: 0%;
+    width: 300px;
+}
+.divabajo{
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
 }
